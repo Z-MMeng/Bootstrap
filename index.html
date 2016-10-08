@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bootstrap架构</title>
+    <!--为了确保适当的绘制和触屏缩放，要添加以下的代码-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--在移动设备浏览器上，通过为视口（viewport）设置 meta 属性为 user-scalable=no 可以禁用其缩放（zooming）功能。这样禁用缩放功能后，用户只能滚动屏幕，就能让你的网站看上去更像原生应用的感觉。注意，这种方式我们并不推荐所有网站使用，还是要看你自己的情况而定！
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+    <!--注意：jquery文件必须在bootstrap.min.js文件之前引入-->
+	<script type="text/javascript" src="js/jquery-2.2.2.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<!--导航-->
+	<div class="headwrap">
+		<div class="header">
+			<div class="logo"><img src="img/logo_dark.png"></div>
+			<div>
+				<ul class="nav nav-pills menu">
+				  <li role="presentation" class="active" id="gain"><a href="#">Home</a></li>
+				  <li role="presentation" id="gain"><a href="#">Features</a></li>
+				  <li role="presentation" id="gain"><a href="#">Services </a></li>
+				  <li role="presentation" id="gain"><a href="#"> Blog </a></li>
+				  <li role="presentation" id="gain"><a href="#">Gallery</a></li>
+				  <li role="presentation" id="gain"><a href="#">Contacts</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+<!--内容-->
+	<div class="onepage">
+		<div class="container">
+			<div class="row">
+				<div class="title-text">
+					<div class="col-md-12 headfontsize">
+						<p><img src="img/index_04.png"></p>
+						<h1 class="text-uppercase">Agriculture campaign</h1>
+						<p class="text-uppercase" >Importance of agriculture for biodiversity conservation</p>
+						<p class="btn-style">
+						<a class="btn btn-success btn-lg text-uppercase">view  more</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="twopage">
+		<div class="twopage-text">
+			<h1>OUR PROJECTS</h1>
+		</div>
+		<div class="row">
+			<div class="twopage-courses col-md-4">
+				<a href="#">
+					<img src="img/index_05.jpg" style="width:100%">
+					<div class="classicon">
+						<h3>Ecologically Friendly Alternatives</h3>
+						<h1>June 22, 2015</h1>
+					</div>
+				</a>
+			</div>
+			<div class="twopage-courses col-md-4">
+				<a href="#">
+					<img src="img/index_07.jpg" style="width:100%">
+					<div class="classicon">
+						<h3>Ecologically Friendly Alternatives</h3>
+						<h1>June 22, 2015</h1>
+					</div>
+				</a>
+			</div>
+			<div class="twopage-courses col-md-4">
+				<a href="#">
+					<img src="img/index_09.jpg" style="width:100%">
+					<div class="classicon">
+						<h3>Ecologically Friendly Alternatives</h3>
+						<h1>June 22, 2015</h1>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="twopagebtn">
+			<a id="twopage-hover" href="#" class="btn btn-success btn-lg text-uppercase">view  more</a></div>
+		</div>
+	</div>
+
+	<div class="threepage">
+		<div class="threepage-text">
+			<h1 class="text-uppercase">20 years of making changes</h1>
+			<p>We use non-violent, creative confrontation to expose<br>
+			global environmental problems</p>
+		</div>
+		<div class="row">
+			<div class="threepage-courses col-md-3">
+				<img src="img/three_19.jpg">
+			</div>
+			<div class="threepage-courses col-md-3">
+				<img src="img/three_21.jpg">
+			</div>
+			<div class="threepage-courses col-md-3">
+				<img src="img/three_23.jpg">
+			</div>
+			<div class="threepage-courses col-md-3">
+				<img src="img/three_25.jpg">
+			</div>
+		</div>
+	</div>
+
+	<div class="fourpage">
+		<h1>GREEN ASSOCIATION ACTIVITIES</h1>
+		<div id="myCarousel" class="carousel slide">
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>   
+			<div class="carousel-inner">
+				<div class="item active">
+					<img src="img/index_05.jpg" alt="First slide">
+				</div>
+				<div class="item">
+					<img src="img/index_07.jpg" alt="Second slide">
+				</div>
+				<div class="item">
+					<img src="img/index_09.jpg" alt="Third slide">
+				</div>
+			</div>
+			<a class="carousel-control carousel-control-lg left" href="#myCarousel" 
+			   data-slide="prev"><br/><br/><br/><br/>&lsaquo;</a>
+			<a class="carousel-control right" href="#myCarousel" 
+			   data-slide="next"><br/><br/><br/><br/>&rsaquo;</a>
+		</div> 
+	</div>
+
+	<div class="fivepage">
+		<div class="row">
+			<div class="fivepage-courses col-md-6">
+				<img src="img/index_38.png">
+				<p>Being eco-friendly today is becoming more and more important. <br/>
+				And it goes far beyond just turning off the light when you’re out of home orseparating your garbage for recycling. It’s your lifestyle!</p>
+				<a class="btn btn-success btn-lg text-uppercase">
+				view  more</a>	
+			</div>
+			<div class="col-md-6">
+				<img src="img/index_40.png">
+			</div>
+		</div>
+	</div>
+
+<!--页脚-->
+	<div class="footer">
+		<div class="row">
+			<div class="col-md-6">
+				<img src="img/index_44.png">
+			</div>
+			<div class="col-md-6">
+			    <div class="footemail">
+					<form method="post" action="#" >
+						<input type="email">
+						<a class="btn btn-success btn-lg text-uppercase">sign up</a>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

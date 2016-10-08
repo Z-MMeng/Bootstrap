@@ -1,0 +1,193 @@
+body,h1,h2,p,a,button{
+	font-family:Arial, Helvetica, sans-serif;
+	margin:0;
+	padding:0;
+}
+.headwrap{width: 100%;}
+.header{
+	width: 1200px;
+	height:130px;
+	margin: 0 auto;
+}
+.header .logo{
+	width: 596px;
+	height: 130px;
+	line-height: 130px;
+	padding-right: 160px;
+	float: left;
+}
+.header .logo img{
+	width: 466px;
+	height: 96px;
+}
+.header .menu{
+	padding-top:56px;
+	color:#333 !important;  /*导航颜色，以及背景颜色无法改变*/
+}
+#gain{
+	padding-right: 10px;
+	color: #4cae4c;
+}
+.header .menu .active{
+	/*background-color: #4cae4c;*/
+    color: #fff;
+}
+/*.header .menu li{
+	color: #4cae4c !important;
+}*/
+.onepage{
+	width: 100%;
+	height:540px;
+	background-image:url(../img/b1_02.jpg);
+	/*url中必须加../，不然图片无法显示，为什么？以前不加也可以啊*/
+	/*position: absolute;作用：图片放大，问题是图片偏移*/
+	background-position: center center;/*作用：放大的图片居中，问题是上下两个边距不平整*/
+	background-size:cover;/*作用：上下边距平整*/
+}
+.title-text{
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 130px;
+}
+.headfontsize{
+	line-height: 60px;
+}
+.headfontsize h1{
+	margin-top: 10px;
+	color: #fff;
+	font-size: 26px;
+}
+
+
+.twopage{
+	width: 1200px;
+	margin: 0 auto;
+}
+.twopage-text h1{
+	height: 150px;
+	line-height: 150px;
+	font-size: 26px;
+	text-align: center;
+}
+.twopage .row{
+	margin-left:0;
+	margin-right:0;
+}
+.twopage-courses{
+	float:left;
+}
+.twopage-courses a{
+	width:100%;
+	height:100%;
+	float: left;/*必须要加，否则鼠标移入不能绝对显示*/
+	text-align:center;
+	position: relative;
+}
+.twopage-courses h1,h3{
+	color:#4cae4c;
+}
+.twopage-courses h3{
+	margin-top:120px;
+}
+.classicon{
+	width:100%;
+	height:100%;
+	/*用relative，absolute就可以实现覆盖到图片上,left,top属性是跟着absolute确定位置的*/
+	position:absolute;
+	left:0;
+	top:0;
+	/*用color和透明度实现鼠标移进移出的效果变化*/
+	color:#fff;
+	opacity:0;
+}
+.classicon:hover{
+	background:#fff;
+	opacity:0.7;
+	transition:opacity 0.5s;/*渐变时间*/
+	-webkit-transition:opacity 0.5s;
+}
+.twopagebtn{
+	width:100%;
+	margin:0 auto;
+	text-align:center;
+	padding-top:25px;
+	padding-bottom:70px;
+}
+
+
+.threepage{
+	width: 1050px;
+	margin: 0 auto;
+	text-align: center;
+	padding-bottom: 90px;
+}
+.threepage-text h1{
+	font-size: 26px;
+	margin-bottom: 20px;
+}
+.threepage-text p{
+	font-size: 18px;
+	margin-bottom: 70px;
+}
+
+
+.fourpage{
+	width: 100%;
+	height: 480px;
+	background-image: url(../img/index_14.jpg);
+	margin-bottom: 100px;
+}
+.fourpage h1{
+	text-align: center;
+	color: #fff;
+	padding-top: 50px;
+	padding-bottom: 65px;
+}
+#myCarousel{
+	width: 380px;
+	height: 270px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+
+.fivepage{
+	width: 1200px;
+	height: 380px;
+	margin: 0 auto;
+}
+.fivepage-courses p{
+	font-size: 18px;
+}
+.fivepage-courses a{
+	margin-top: 30px;
+}
+
+
+.footer{
+	width: 100%;
+	height: 242px;
+	background-color: #313A42;
+}
+.footer .row{
+	width: 1200px;
+	margin: 0 auto;
+	padding-top: 65px;
+}
+.footemail{
+	height: 100px;
+	line-height: 100px;/*搜索框居中显示*/
+	margin-left: 50px;
+}
+.footemail input{
+	width: 300px;
+	height: 50px;/*改变搜索框的高度*/
+    background-color: #5a6167;
+    border: none;
+	border-radius: 5px;
+	-moz-border-radius: 5px; 
+    -webkit-border-radius: 5px; 
+    clear: both;
+    vertical-align: center;
+	margin-right: 10px;
+}
